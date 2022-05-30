@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efeito Hover</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin: auto;
+      }
+      .efeito {
+        width: 100px;
+        height: 1ss00px;
+        background-color: red;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 30px;
+        padding-top: 35px;
+      }
+
+      .efeito:hover {
+        background-color: brown;
+        cursor: pointer;
+      }
+      .efeito:active {
+        background-color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="efeito" onclick="teste()">Clique</div>
+
+    <script>
+      function teste() {
+        let efeito = document.getElementsByClassName("efeito");
+        return alert("Olá mundo");
+      }
+    </script>
+  </body>
+</html>
